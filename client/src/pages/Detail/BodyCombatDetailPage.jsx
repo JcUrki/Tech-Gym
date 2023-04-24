@@ -14,9 +14,8 @@ export default function BodyCombatDetailPage(){
 
     useEffect(()=>{
         setLoading(true)
-        Getinfo.getOneBodyCombat()
-            .then(res =>{ 
-                console.log(res)
+        Getinfo.getBodyCombat()
+        .then(res =>{ 
                 setSingleDetail(res[id])
                 setLoading(false)
             })
@@ -33,19 +32,19 @@ export default function BodyCombatDetailPage(){
                     <ContainerImgDetail>
                     <ContainerImgPrincipal>
                         <div>
-                        <ImgProduct src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt={"singleDetail.título"}/>
+                        <ImgProduct src={singleDetail.img} alt={"singleDetail.título"}/>
                         </div>
                     </ContainerImgPrincipal>
                     <ContainerImgSelect>
                     <FlexRow>
                         <div>
-                        <ImgSelect src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+                        <ImgSelect src={singleDetail.img} />
                         </div>
                         <div>
-                            <ImgSelect src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+                            <ImgSelect src={singleDetail.img} />
                         </div>
                         <div>
-                        <ImgSelect src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+                        <ImgSelect src={singleDetail.img} />
                         </div>
                         </FlexRow>
                     </ContainerImgSelect>
@@ -55,13 +54,15 @@ export default function BodyCombatDetailPage(){
                     <ContainerInfo>
                         <TitleProduct>{/*singleDetail.título*/}</TitleProduct>
                             <ContainerDescription>
-                                <ReadMore>
+                                <ReadMore> 
+                                    <h4>Description:</h4>
                                     <p>
-                                        <h4>Description:</h4>
-                                        {/*singleDetail.descripción*/}
-                                    </p>
+                                       
+                                        
+                                    </p> 
+                                    <h4>Precio: </h4>
                                     <p>
-                                        <h4>Precio: </h4>
+                                       
                                         {/*singleDetail.precio*/}
                                     </p>
                                 </ReadMore>

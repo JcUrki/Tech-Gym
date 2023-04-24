@@ -8,21 +8,20 @@ import { BsArrowLeftSquareFill } from "react-icons/bs";
 import { ProductGalleryStyle } from "../../components/styles/ProductGallery.styled.jsx";
 
 export default function YogaDetailPage(){
-   /* const {id} = useParams();
+    const {id} = useParams();
     const [singleDetail, setSingleDetail]= useState([id])
     const [loading, setLoading] = useState(false)
 
     useEffect(()=>{
         setLoading(true)
-        Getinfo.getOneYoga()
-            .then(res =>{ 
-                console.log(res)
+        Getinfo.getYoga()
+        .then(res =>{ 
                 setSingleDetail(res[id])
                 setLoading(false)
             })
     }, [id])
 
-    if (loading) return <section>Cargando...</section>*/
+    if (loading) return <section>Cargando...</section>
     
     return(
         <section>
@@ -33,19 +32,19 @@ export default function YogaDetailPage(){
                     <ContainerImgDetail>
                     <ContainerImgPrincipal>
                         <div>
-                        <ImgProduct src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt={"singleDetail.título"}/>
+                        <ImgProduct src={singleDetail.img} alt={"singleDetail.título"}/>
                         </div>
                     </ContainerImgPrincipal>
                     <ContainerImgSelect>
                     <FlexRow>
                         <div>
-                        <ImgSelect src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+                        <ImgSelect src={singleDetail.img} />
                         </div>
                         <div>
-                            <ImgSelect src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+                            <ImgSelect src={singleDetail.img} />
                         </div>
                         <div>
-                        <ImgSelect src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWplcmNpY2lvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+                        <ImgSelect src={singleDetail.img} />
                         </div>
                         </FlexRow>
                     </ContainerImgSelect>
