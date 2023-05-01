@@ -28,10 +28,12 @@ export const FlexRow = styled.section`
     justify-content: space-around;
     align-items: center;
 `
+
 export const FlexColumn = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 `
+
 export default  GlobalStyle

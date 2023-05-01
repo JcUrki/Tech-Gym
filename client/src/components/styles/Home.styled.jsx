@@ -1,52 +1,38 @@
 import styled from "styled-components";
+import { FlexRow } from "../../globalStyles";
 
-export const HomeContainerStyle = styled.section`
-display: flex;
-flex-wrap:wrap; 
+export const SectionCategorias = styled.section `
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2rem;
+
+  .categoria{
+    &:hover{
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
 `
-export const SectionCategories = styled.section `
-display: flex;
-justify-content:space-around;
-flex-flow: row wrap;
-padding: 5%;
 
-`;
+export const Categoria = styled(FlexRow)`
+  text-align: center;
+  align-content: center;
+  color:#f5be30;
 
-export const Categoria = styled.section `
+  img {
+    width: 22rem;
+    height: 12rem;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
 
-/* background-color: red; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-width: 20em;
-height: 12em;
-
-`;
-export const ContainerCategoria = styled.div `
-    justify-content: space-between;
-    text-align: center;
+  h3 {
+    font-size: 2rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:#f5be30;
-
-`;
-
-
-export const TextCategoria = styled.h3 `
-display: flex;
-justify-content: center;
-align-items: centeR;
-
-    color:#f5be30;
-    
-
+    -webkit-text-stroke: 0.05rem #7a7a7a;
+  }
 `
+
 export const ImageImg = styled.img`
-display: flex;
-width:25em;
-height:12em;
-padding: 1% 1% 1% 1%;
-`;
+  border-radius: 0.5rem;
+`
