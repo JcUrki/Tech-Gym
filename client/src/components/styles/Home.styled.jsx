@@ -36,3 +36,20 @@ export const Categoria = styled(FlexRow)`
 export const ImageImg = styled.img`
   border-radius: 0.5rem;
 `
+
+export const TituloCategorias = styled.h1`
+  text-align: center;
+
+  span{
+    margin: 2rem;
+  }
+  
+  &::before, &::after {
+    content: ' ';
+    height: 0.15rem;
+    width: 25rem;
+    background-color: rgba(119, 24, 0, 0.4);
+    display: inline-block;
+    margin-bottom: 0.2rem;
+  }
+`

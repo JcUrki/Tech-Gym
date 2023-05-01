@@ -3,17 +3,21 @@ import Carousel from "../components/Carousel";
 import {
   Categoria,
   ImageImg,
-  SectionCategorias, 
+  SectionCategorias,
+  TituloCategorias, 
 } from "../components/styles/Home.styled";
 import {Link} from "react-router-dom"
 
 
 export default function Home() {
   return (
-    <section>
+    <>
       <Carousel />
-  
-      <SectionCategorias>
+
+      <section>
+        <TituloCategorias><span>Tipos de clases</span></TituloCategorias>
+
+        <SectionCategorias>
         <Link to="BodyCombatGallery" className="categoria"> 
           <Categoria>
               <h3>Body Combat</h3>
@@ -55,7 +59,8 @@ export default function Home() {
             <ImageImg src="https://images.unsplash.com/photo-1614691771330-13f4e0deec54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyZGlvfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="imatge" />
           </Categoria>
         </Link>
-      </SectionCategorias>
-    </section>
+        </SectionCategorias>
+      </section> 
+    </>
   )
 }
