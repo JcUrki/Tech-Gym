@@ -6,9 +6,11 @@ const GlobalStyle = createGlobalStyle`
     --bg-nav: #596277;
     --bg-ft: #596277;
     --bg-form: #5D657C53;
-    --bg-bt1: #FFBA19;
+    --bg-bt1: ;
     --bg-bt2: #FF4A00;
     --bg-bt3: #30EAF5;
+    --h2-nav: white;
+    --span-nav: #ffca4e;
   }
 
   * {

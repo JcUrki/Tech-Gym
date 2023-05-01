@@ -10,8 +10,8 @@ export default function Navbar(){
         <header>
             <NavStyle>
                 <Link to="/"><img src={logo} alt="LogoTechGym"/></Link>
-                <h2>Es hora de desarrollar tu cuerpo. Levántate de la silla!</h2>
-                <IconContext.Provider value={{ size:'2em', color:'' }}>
+                <h2>Es hora de desarrollar tu cuerpo <span>¡Levántate de la silla!</span></h2>
+                <IconContext.Provider value={{ size:'2em', color:'#5bcaf3' }}>
                     <button><BsCartFill/></button>         
                 </IconContext.Provider>
                 <input type='text' placeholder='Busca la actividad que prefieras' className="buscador"/>  
