@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --bg-bt3: #30EAF5;
     --h2-nav: white;
     --span-nav: #ffca4e;
+    --ft-text: white;
   }
 
   * {

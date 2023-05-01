@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const FtStyle = styled.footer`
-    background-color: var(--bg-ft);  
-    line-height: 1.8em;
     text-align: center;
-    height: 2em;
+    background-color: var(--bg-ft);    
     color: white;
-    margin: 3vw;
+    padding: 0.1rem;
+    margin-top: 1rem;
+
+    p{
+        font-weight: bold;
+    }
 `
