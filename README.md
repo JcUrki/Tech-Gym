@@ -30,7 +30,7 @@
             <p>git clone https://github.com/PazManrique/Tech-Gym.git</p>
         <li>Instalamos Node Package Manager: </li>
             <p>npm install / npm i</p>
-        <li>Vizualizamos el proyecto ejecutando en un terminal integrado para:</li>
+        <li>Visualizamos el proyecto ejecutando en un terminal integrado para:</li>
             <p>📂 El "server" usando el comando:</p>
                 <p>npx json-server db.json --port 1234</p>
             <p>Y</p>
